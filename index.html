@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajiv Kumar — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url('./header-gradient.svg');background-repeat: no-repeat;">
+
+  <div class="ambient">
+    <div class="ambient-blob"></div>
+    <div class="ambient-blob"></div>
+    <div class="ambient-blob"></div>
+  </div>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+
+  <nav id="mainNav">
+    <!-- avatar (desktop) -->
+    <div class="nav-avatar" id="navAvatar">R</div>
+    <a href="/timeline" onclick="window.location.href='timeline'" class="nav-link  mobtimelinelink"
+      style="position:relative">
+      timeline
+      <span class="nav-badge">1</span>
+    </a>
+    <!-- desktop links -->
+    <div class="nav-links">
+      <a href="/timeline" onclick="window.location.href='timeline'" class="nav-link active" style="position:relative">
+        timeline
+        <span class="nav-badge">1</span>
+      </a>
+      <a href="/work" onclick="window.location.href='work'" class="nav-link">work</a>
+      <a href="/about" onclick="window.location.href='about'" class="nav-link">about</a>
+      <a href="/story" onclick="window.location.href='story'" class="nav-link">story</a>
+
+
+      <div class="nav-more" id="navMore">
+        <button class="nav-more-btn" id="moreBtn">
+          more
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none">
+            <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="dropdown" id="dropdown">
+          <a href="/creative" onclick="window.location.href='creative'">Creatives</a>
+          <a href="/links" onclick="window.location.href='links'">links</a>
+
+          <a href="/techstack" onclick="window.location.href='techstack'">tech stack</a>
+          <a href="https://instagram.com/troubleshooter.rajiv/" target="_blank">photos</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- divider -->
+    <div class="nav-divider"></div>
+
+    <!-- icon actions -->
+    <div class="nav-actions">
+      <a href="https://instagram/troubleshooter.rajiv/" class="nav-icon-btn" title="Instagam">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor"
+            stroke-width="2" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </a>
+      <!-- Figma -->
+      <a class="nav-icon-btn" title="linkedin" href="https://www.linkedin.com/in/rajiv-kumar-dev/">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+      <!-- Twitter -->
+      <a href="https://x.com/RajivKumar31499" class="nav-icon-btn" title="Twitter">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      </a>
+      <!-- Theme toggle -->
+      <button class="nav-icon-btn theme-btn" id="themeBtn" title="Toggle theme">
+        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+      <!-- Hamburger — mobile only -->
+      <button class="nav-icon-btn nav-mobile-toggle" id="hamburgerBtn" title="Menu" aria-label="Open menu">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+          <rect x="2" y="5" width="16" height="1.8" rx="0.9" fill="currentColor" />
+          <rect x="2" y="9.1" width="11" height="1.8" rx="0.9" fill="currentColor" />
+          <rect x="2" y="13.2" width="14" height="1.8" rx="0.9" fill="currentColor" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+     MOBILE SLIDE DRAWER
+═════════════════════════════════════════════ -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <!-- header -->
+    <div class="drawer-header">
+      <div class="drawer-logo">
+        <div class="drawer-avatar">R</div>
+        <div>
+          <div class="drawer-name">Rajiv Kumar</div>
+          <div class="drawer-handle">@troubleshooter.rajiv</div>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- body -->
+    <div class="drawer-body">
+      <div class="drawer-section-label">Navigation</div>
+
+      <a href="/timeline" onclick="window.location.href='timeline'" class="drawer-link active" id="dl-timeline">
+        <span>timeline</span>
+        <span class="drawer-badge">1</span>
+      </a>
+      <a href="/work" onclick="window.location.href='work'" class="drawer-link" id="dl-work">
+        <span>work</span>
+      </a>
+      <a href="/creative" onclick="window.location.href='creative'" class="drawer-link" id="dl-creative">
+        <span>creatives</span>
+      </a>
+      <a href="/about" onclick="window.location.href='about'" class="drawer-link" id="dl-about">
+        <span>about</span>
+      </a>
+      <a href="/story" onclick="window.location.href='story'" class="drawer-link" id="dl-story">
+        <span>story</span>
+      </a>
+
+      <div class="drawer-divider"></div>
+      <div class="drawer-section-label">More</div>
+
+      <a href="/links" onclick="window.location.href='links'" class="drawer-link">links</a>
+
+      <a href="/techstack" onclick="window.location.href='techstack'" class="drawer-link">tech stack</a>
+      <a href="https://instagram.com/troubleshooter.rajiv/" target="_blank" class="drawer-link">photos</a>
+
+    </div>
+  </div>
+  <main>
+    <!-- Socials — rendered by JS from socials.csv -->
+    <div class="socials" id="socialsContainer"></div>
+
+    <!-- Hero -->
+    <h1 class="hero-title">Hi, I'm <em>Rajiv Kumar.</em></h1>
+
+    <p class="hero-body">
+      Right now, I'm focusing on making <a href="#">my own game</a>. I love both design
+      and code. Alongside that, I spend time doing contract work, Editing, Graphics,
+      and building tools and plugins.
+    </p>
+
+    <p class="hero-sub">Building what I love at <a href="/work">@bash.rajiv</a></p>
+
+    <!-- Marquee — rendered by JS from marquee.csv -->
+    <div class="marquee-wrapper">
+      <div class="marquee-track" id="marqueeTrack">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section-header">
+      <span class="section-label">Current Projects</span>
+      <a href="/work" class="section-link">All Works →</a>
+    </div>
+
+    <!-- Grids populated by JS from projects.csv -->
+    <div class="projects-grid" id="grid1"></div>
+    <div class="projects-grid" id="grid2" style="margin-top: 0;"></div>
+  </main>
+
+  <script>
+    // ─── SVG ICONS FOR SOCIALS ───────────────────────────────────────────────────
+    const SOCIAL_ICONS = {
+      twitter: `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`,
+      instagram: `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`,
+      linkedin: `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>`,
+      github: `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>`,
+    };
+
+    const KEY_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16"><path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8m4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5"/><path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>`;
+    const SEND_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16"><path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/></svg>`;
+
+    // ─── RENDER SOCIALS ──────────────────────────────────────────────────────────
+    async function renderSocials() {
+      const data = await fetchCSV('/data/socials.csv');
+      const container = document.getElementById('socialsContainer');
+      if (!container) return;
+      container.innerHTML = data.map(s => `
+    <a href="${s.url}" class="social-link" target="_blank" rel="noopener">
+      ${SOCIAL_ICONS[s.icon] || ''}
+      ${s.name}
+    </a>
+  `).join('');
+    }
+
+    // ─── RENDER MARQUEE ──────────────────────────────────────────────────────────
+    async function renderMarquee() {
+      const data = await fetchCSV('/data/marquee.csv');
+      const track = document.getElementById('marqueeTrack');
+      if (!track) return;
+      // Duplicate for seamless loop
+      const items = data.map(d => `<span class="marquee-item">${d.label}</span>`).join('');
+      track.innerHTML = items + items;
+    }
+
+    // ─── RENDER PROJECTS ─────────────────────────────────────────────────────────
+    async function renderProjects() {
+      const data = await fetchCSV('/data/projects.csv');
+      const grid1 = document.getElementById('grid1');
+      const grid2 = document.getElementById('grid2');
+      if (!grid1 || !grid2) return;
+
+      const half = Math.ceil(data.length / 2);
+      const row1 = data.slice(0, half);
+      const row2 = data.slice(half);
+
+      function buildCard(p) {
+        let iconHtml = '';
+        if (p.icon_type === 'image' && p.logo_url) {
+          iconHtml = `<img loading="lazy" src="${p.logo_url}" style="width:70px;border-radius:55px;" alt="${p.title}">`;
+        } else if (p.icon_type === 'svg_key') {
+          iconHtml = KEY_SVG;
+        } else if (p.emoji) {
+          iconHtml = p.emoji;
+        }
+
+        const clickable = p.link && p.link !== '#' ? `onclick="window.location.href='${p.link}'" style="cursor:pointer;"` : '';
+        return `
+      <div class="project-card">
+        <span class="project-badge badge-v2">${p.badge}</span>
+        <div class="project-card-img">
+          <div class="app-icon icon-3d">${iconHtml}</div>
+          <div class="project-card-hover-info" ${clickable}>
+            <div class="hover-title">${p.title}</div>
+            <div class="hover-desc">${p.desc}</div>
+            <div class="hover-link">${SEND_SVG}</div>
+          </div>
+        </div>
+      </div>`;
+      }
+
+      grid1.innerHTML = row1.map(buildCard).join('');
+      grid2.innerHTML = row2.map(buildCard).join('');
+
+      // Trigger intersection observer (defined in common.js after this script runs)
+      // Re-init for dynamically rendered cards
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.project-card').forEach((card, i) => {
+              setTimeout(() => card.classList.add('visible'), i * 70);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      observer.observe(grid1);
+      observer.observe(grid2);
+    }
+
+    // ─── INIT ─────────────────────────────────────────────────────────────────────
+    renderSocials();
+    renderMarquee();
+    renderProjects();
+  </script>
+  <footer>
+    <div class="footer-contents">
+      <div>
+        <h3 class="gr8bh">Rajiv Kumar</h3>
+      </div>
+      <div class="footer-links">
+        <div class="gr8bh"><a class="gr8bh" href="/links">links</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/techstack">techstack</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/timeline">timeline</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/work">work</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/creative">creatives</a></div>
+      </div>
+      <div style="height: 300px; align-content: flex-end;">
+        <h4 class="gr8bh">✦ Passionate Professional Programmer ✦</h4>
+        <div style="font-size:12px;color:var(--text3);margin-top:6px;transition:color .4s">
+          © <span id="footerYear"></span> Rajiv Kumar. All rights reserved.
+        </div>
+      </div>
+      <div style="height: 30px;"></div>
+    </div>
+  </footer>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+  <script src="/common.js"></script>
+</body>
+
+</html>

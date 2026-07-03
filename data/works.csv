@@ -1,0 +1,8 @@
+title,desc,badge,logo_url,link,tech,year,status
+Chita State Medical Academy,University of Russia Official partner website built with full CMS for universities listings and student resources.,V3,https://chitastatemedicalacademy.in/media/logo/logo.png,https://chitastatemedicalacademy.in/,PHP|MySQL|Laravel,2025,Live
+Amur State Medical Academy,Russian medical university partner site with full admission system and student portal.,V2,https://amurstatemedicalacademy.com/media/logo/logo.png,https://amurstatemedicalacademy.com/,PHP|MySQL|Bootstrap,2024,Live
+Gauranga Consultancy,Responsive consultancy platform featuring university listings admission assistance and lead-generation focused UX.,V2,https://gaurangaconsultancy.com/media/logo/logo.png,https://gaurangaconsultancy.com/,PHP|MySQL|JS,2024,Live
+Secure Credential Vault,"AES-256 encrypted password manager. Master password never stored — MAC verified per request.",V4,,#,PHP|AES-256|PBKDF2,2025,Private
+Personal Portfolio v5,Redesigned personal portfolio with dark/light mode CSV-driven dynamic content and premium UI.,V5,,/,PHP|JS|CSS,2026,Live
+WhatsApp Automation Tool,Bulk WhatsApp messaging automation using Selenium and Python with scheduling support.,V1,,#,Python|Selenium,2023,Archived
+Custom Admin Panel,Role-based PHP dashboard with audit logs CRUD operations and task calendar.,V2,,#,PHP|MySQL|FullCalendar,2024,Private

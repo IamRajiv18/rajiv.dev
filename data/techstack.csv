@@ -1,0 +1,44 @@
+section,name,tag,desc,bg,icon
+Languages,PHP,backend,Core backend language — MySQLi sessions AJAX handlers.,#4f5b93,php
+Languages,JavaScript,frontend,Vanilla JS for AJAX DOM and interactive UI logic.,#f0db4f,js
+Languages,Python,scripting,Selenium automation scripting and data tasks.,#306998,python
+Languages,SQL,database,MySQL/MySQLi queries joins schema design.,#00758f,sql
+Languages,HTML/CSS,frontend,Scoped prefixed styling — no framework bloat.,#e34c26,html
+Frameworks & Libraries,MySQLi,database,Direct DB layer for all admin panel CRUD.,#00758f,mysqli
+Frameworks & Libraries,FullCalendar.js,frontend,Role-based task calendar with assignment & progress.,#3788d8,calendar
+Frameworks & Libraries,TCPDF / mPDF,backend,PDF generation — fee structures reports.,#c0392b,pdf
+Frameworks & Libraries,PHPMailer,backend,Transactional emails via SMTP (Hostinger).,#663399,mail
+Frameworks & Libraries,Selenium,automation,Browser automation — bulk WhatsApp tool.,#43b02a,selenium
+Frameworks & Libraries,Bootstrap,frontend,Quick responsive scaffolding when needed.,#7952b3,bootstrap
+Security & APIs,AES-256-CBC,security,Encrypted chat file storage credential vault.,#1a1a1a,lock
+Security & APIs,PBKDF2-SHA256,security,Key derivation for the credential vault (150k iter).,#1a1a1a,key
+Security & APIs,Shiprocket / Fastrr,api,Headless checkout — HMAC-SHA256 token flow.,#2e7d32,ship
+Security & APIs,REST APIs,api,JSON endpoints dedicated PHP handlers.,#ff6f00,api
+Tools & Platforms,VS Code,coding,Primary IDE for all PHP/JS work.,#0078d4,vscode
+Tools & Platforms,Git / GitHub,coding,Version control for every project.,#181717,github
+Tools & Platforms,phpMyAdmin,database,DB inspection and quick fixes.,#f29111,phpmyadmin
+Tools & Platforms,XAMPP,dev,Local Apache/MySQL/PHP dev stack.,#fb7a24,xampp
+Tools & Platforms,Hostinger,hosting,Shared hosting — cPanel SMTP deployments.,#673de6,hostinger
+Tools & Platforms,Postman,coding,API testing for integrations like Shiprocket.,#ff6c37,postman
+Tools & Platforms,Claude,ai,Study aid code review and build partner.,#d97757,claude
+Apps and Games,Figma,design,My primary design tool for UI illustrations and planning.,#1e1b2e,figma
+Apps and Games,Cron,productivity,The next-generation calendar for professionals and teams.,#e55b2d,cron
+Apps and Games,Slack,communication,Team communication and collaboration in one place.,#f8f8f8,slack
+Apps and Games,Spotify,music,Music and podcasts — the fuel for deep work sessions.,#1db954,spotify
+Apps and Games,Linear,productivity,The issue tracker built for modern software teams.,#5e6ad2,linear
+Apps and Games,Notion,notes,All-in-one workspace for notes docs and databases.,#191919,notion
+Apps and Games,Discord,communication,Voice video and text — the hub for my communities.,#5865f2,discord
+Apps and Games,DaVinci,creative,Professional video editing and color grading suite.,#1a1a1a,davinci
+Apps and Games,After Fx,creative,Motion graphics and visual effects powerhouse by Adobe.,#1a0030,aefx
+Apps and Games,1Password,productivity,The password manager that keeps all credentials secure.,#1b6bc1,1password
+Apps and Games,Next.js,coding,The React framework for production-grade web applications.,#000,nextjs
+Apps and Games,Blender,3d,The open-source 3D creation suite for modeling and rendering.,#e87d0d,blender
+Apps and Games,Chrome,browser,Google's fast and versatile web browser.,#fff,chrome
+Apps and Games,Godot,game,Open-source game engine for 2D and 3D projects.,#478cbf,godot
+Apps and Games,Obsidian,ai,A powerful knowledge base for networked thinking.,#7c3aed,obsidian
+Apps and Games,Photoshop,creative,Industry-standard raster editor for photo editing and compositing.,#001d34,ps
+Apps and Games,Raycast,productivity,Blazing fast launcher and productivity tool for Mac.,#ff6363,raycast
+Hardware,MacBook Pro,productivity,M3 Pro chip — the backbone of my entire creative workflow.,#e0e0e0,mac
+Hardware,iPad Pro,creative,12.9-inch iPad Pro with Apple Pencil for illustration.,#c0c0c0,ipad
+Hardware,Sony WH-1000XM5,music,Industry-leading noise cancelling headphones.,#1a1a1a,sony
+Hardware,Stream Deck,productivity,Customizable LCD key controller for any workflow.,#0a0a0a,streamdeck

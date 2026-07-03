@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajiv Kumar — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url('./header-gradient.svg');background-repeat: no-repeat;">
+
+  <div class="ambient">
+    <div class="ambient-blob"></div>
+    <div class="ambient-blob"></div>
+    <div class="ambient-blob"></div>
+  </div>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+
+  <nav id="mainNav">
+    <!-- avatar (desktop) -->
+    <div class="nav-avatar" id="navAvatar">R</div>
+    <a href="/timeline" onclick="window.location.href='timeline'" class="nav-link  mobtimelinelink"
+      style="position:relative">
+      timeline
+      <span class="nav-badge">1</span>
+    </a>
+    <!-- desktop links -->
+    <div class="nav-links">
+      <a href="/timeline" onclick="window.location.href='timeline'" class="nav-link active" style="position:relative">
+        timeline
+        <span class="nav-badge">1</span>
+      </a>
+      <a href="/work" onclick="window.location.href='work'" class="nav-link">work</a>
+      <a href="/about" onclick="window.location.href='about'" class="nav-link">about</a>
+      <a href="/story" onclick="window.location.href='story'" class="nav-link">story</a>
+
+
+      <div class="nav-more" id="navMore">
+        <button class="nav-more-btn" id="moreBtn">
+          more
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none">
+            <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="dropdown" id="dropdown">
+          <a href="/creative" onclick="window.location.href='creative'">Creatives</a>
+          <a href="/links" onclick="window.location.href='links'">links</a>
+
+          <a href="/techstack" onclick="window.location.href='techstack'">tech stack</a>
+          <a href="https://instagram.com/troubleshooter.rajiv/" target="_blank">photos</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- divider -->
+    <div class="nav-divider"></div>
+
+    <!-- icon actions -->
+    <div class="nav-actions">
+      <a href="https://instagram/troubleshooter.rajiv/" class="nav-icon-btn" title="Instagam">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor"
+            stroke-width="2" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </a>
+      <!-- Figma -->
+      <a class="nav-icon-btn" title="linkedin" href="https://www.linkedin.com/in/rajiv-kumar-dev/">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+      <!-- Twitter -->
+      <a href="https://x.com/RajivKumar31499" class="nav-icon-btn" title="Twitter">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      </a>
+      <!-- Theme toggle -->
+      <button class="nav-icon-btn theme-btn" id="themeBtn" title="Toggle theme">
+        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+      <!-- Hamburger — mobile only -->
+      <button class="nav-icon-btn nav-mobile-toggle" id="hamburgerBtn" title="Menu" aria-label="Open menu">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+          <rect x="2" y="5" width="16" height="1.8" rx="0.9" fill="currentColor" />
+          <rect x="2" y="9.1" width="11" height="1.8" rx="0.9" fill="currentColor" />
+          <rect x="2" y="13.2" width="14" height="1.8" rx="0.9" fill="currentColor" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+     MOBILE SLIDE DRAWER
+═════════════════════════════════════════════ -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <!-- header -->
+    <div class="drawer-header">
+      <div class="drawer-logo">
+        <div class="drawer-avatar">R</div>
+        <div>
+          <div class="drawer-name">Rajiv Kumar</div>
+          <div class="drawer-handle">@troubleshooter.rajiv</div>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- body -->
+    <div class="drawer-body">
+      <div class="drawer-section-label">Navigation</div>
+
+      <a href="/timeline" onclick="window.location.href='timeline'" class="drawer-link active" id="dl-timeline">
+        <span>timeline</span>
+        <span class="drawer-badge">1</span>
+      </a>
+      <a href="/work" onclick="window.location.href='work'" class="drawer-link" id="dl-work">
+        <span>work</span>
+      </a>
+      <a href="/creative" onclick="window.location.href='creative'" class="drawer-link" id="dl-creative">
+        <span>creatives</span>
+      </a>
+      <a href="/about" onclick="window.location.href='about'" class="drawer-link" id="dl-about">
+        <span>about</span>
+      </a>
+      <a href="/story" onclick="window.location.href='story'" class="drawer-link" id="dl-story">
+        <span>story</span>
+      </a>
+
+      <div class="drawer-divider"></div>
+      <div class="drawer-section-label">More</div>
+
+      <a href="/links" onclick="window.location.href='links'" class="drawer-link">links</a>
+
+      <a href="/techstack" onclick="window.location.href='techstack'" class="drawer-link">tech stack</a>
+      <a href="https://instagram.com/troubleshooter.rajiv/" target="_blank" class="drawer-link">photos</a>
+
+    </div>
+  </div>
+  <style>
+    .page-header {
+      text-align: center;
+      padding: 100px 24px 40px;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      animation: fadeUp .7s .15s cubic-bezier(.4, 0, .2, 1) forwards
+    }
+
+    .page-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(38px, 6.5vw, 64px);
+      font-weight: 400;
+      background: linear-gradient(135deg, #e84b3a 0%, #f472b6 50%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 14px;
+      background-size: 200% 200%;
+      animation: gradShift 6s ease infinite
+    }
+
+    @keyframes gradShift {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    .page-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text2);
+      max-width: 460px;
+      margin: 0 auto 22px;
+      transition: color .4s
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 28px
+    }
+
+    .divider-line {
+      height: 1px;
+      width: 80px;
+      background: var(--border);
+      transition: background .4s
+    }
+
+    .divider-gem {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      background: linear-gradient(135deg, #e84b3a, #f472b6);
+      transform: rotate(45deg);
+      animation: gemPulse 3s ease-in-out infinite
+    }
+
+    .divider-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--text3);
+      transition: background .4s
+    }
+
+    @keyframes gemPulse {
+
+      0%,
+      100% {
+        transform: rotate(45deg) scale(1)
+      }
+
+      50% {
+        transform: rotate(45deg) scale(1.2);
+        box-shadow: 0 0 12px rgba(232, 75, 58, .4)
+      }
+    }
+
+    .stats-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin: 0 auto 32px;
+      max-width: 480px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px 24px;
+      box-shadow: var(--card-shadow);
+      transition: background .4s, border-color .4s
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center
+    }
+
+    .stat-val {
+      font-family: 'Instrument Serif', serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1;
+      transition: color .4s
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--text3);
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      transition: color .4s
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 36px;
+      background: var(--border);
+      transition: background .4s
+    }
+
+    .filter-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 0 auto 32px;
+      flex-wrap: wrap;
+      padding: 0 24px
+    }
+
+    .filter-btn {
+      padding: 8px 20px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text2);
+      font-size: 13px;
+      font-weight: 500;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: all .25s cubic-bezier(.4, 0, .2, 1);
+      box-shadow: var(--card-shadow)
+    }
+
+    .filter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--card-hover-shadow);
+      color: var(--text)
+    }
+
+    .filter-btn.active {
+      background: var(--text);
+      color: var(--bg);
+      border-color: var(--text)
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px 80px
+    }
+
+    .reels-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px
+    }
+
+    @media(max-width:768px) {
+      .reels-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(max-width:480px) {
+      .reels-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .reel-card {
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      cursor: pointer;
+      transition: transform .3s cubic-bezier(.4, 0, .2, 1), box-shadow .3s, border-color .3s, background .4s;
+      opacity: 0;
+      transform: translateY(20px)
+    }
+
+    .reel-card.visible {
+      animation: fadeUp .5s cubic-bezier(.4, 0, .2, 1) forwards
+    }
+
+    .reel-card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: var(--card-hover-shadow);
+      border-color: rgba(232, 75, 58, .2)
+    }
+
+    .reel-card.featured {
+      grid-column: span 2
+    }
+
+    @media(max-width:480px) {
+      .reel-card.featured {
+        grid-column: span 1
+      }
+    }
+
+    .reel-thumb {
+      position: relative;
+      aspect-ratio: 16/9;
+      overflow: hidden
+    }
+
+    .reel-card.featured .reel-thumb {
+      aspect-ratio: 21/9
+    }
+
+    .thumb-bg {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform .4s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    .reel-card:hover .thumb-bg {
+      transform: scale(1.04)
+    }
+
+    .thumb-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, .6) 0%, transparent 60%)
+    }
+
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.9);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity .25s, transform .25s cubic-bezier(.34, 1.56, .64, 1)
+    }
+
+    .reel-card:hover .play-btn {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1)
+    }
+
+    .platform-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .plat-YouTube {
+      background: #ff0000
+    }
+
+    .plat-Instagram {
+      background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)
+    }
+
+    .plat-Behance {
+      background: #1769ff
+    }
+
+    .plat-Dribbble {
+      background: #ea4c89
+    }
+
+    .plat-Twitter {
+      background: #1da1f2
+    }
+
+    .cat-pill {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      color: white
+    }
+
+    .pill-company {
+      background: rgba(167, 139, 250, .7)
+    }
+
+    .pill-personal {
+      background: rgba(96, 165, 250, .7)
+    }
+
+    .pill-client {
+      background: rgba(52, 211, 153, .7)
+    }
+
+    .pill-collab {
+      background: rgba(251, 191, 36, .7)
+    }
+
+    .duration-badge {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 10px;
+      color: rgba(255, 255, 255, .85);
+      background: rgba(0, 0, 0, .5);
+      padding: 2px 8px;
+      border-radius: 100px;
+      backdrop-filter: blur(4px)
+    }
+
+    .reel-body {
+      padding: 14px 16px
+    }
+
+    .reel-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.4;
+      transition: color .4s
+    }
+
+    .reel-meta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 6px;
+      flex-wrap: wrap
+    }
+
+    .reel-client {
+      font-size: 12px;
+      color: var(--text2);
+      transition: color .4s
+    }
+
+    .reel-dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--text3)
+    }
+
+    .reel-date {
+      font-size: 12px;
+      color: var(--text3);
+      transition: color .4s
+    }
+
+    .reel-views {
+      font-size: 12px;
+      color: var(--text3);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      transition: color .4s
+    }
+
+    .reel-hint {
+      padding: 0 16px 12px;
+      font-size: 12px;
+      color: var(--text3);
+      transition: color .4s
+    }
+
+    .hint-text {
+      display: inline-block;
+      transition: transform .2s
+    }
+
+    .reel-card:hover .hint-text {
+      transform: translateX(4px)
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .7);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s
+    }
+
+    .modal-backdrop.open {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      width: 100%;
+      max-width: 480px;
+      overflow: hidden;
+      box-shadow: 0 32px 80px rgba(0, 0, 0, .4);
+      transform: scale(.95) translateY(20px);
+      transition: transform .35s cubic-bezier(.34, 1.56, .64, 1), background .4s, border-color .4s
+    }
+
+    .modal-backdrop.open .modal {
+      transform: scale(1) translateY(0)
+    }
+
+    .modal-thumb {
+      aspect-ratio: 16/9;
+      position: relative;
+      overflow: hidden
+    }
+
+    .modal-thumb-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, .25)
+    }
+
+    .modal-play-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .95);
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, .6);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: transform .2s, background .2s;
+      z-index: 2
+    }
+
+    .modal-close:hover {
+      transform: scale(1.1);
+      background: rgba(0, 0, 0, .85)
+    }
+
+    .modal-body {
+      padding: 20px 22px 24px
+    }
+
+    .modal-cat-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 10px
+    }
+
+    .mcat-company {
+      background: rgba(167, 139, 250, .15);
+      color: #a78bfa
+    }
+
+    .mcat-personal {
+      background: rgba(96, 165, 250, .15);
+      color: #60a5fa
+    }
+
+    .mcat-client {
+      background: rgba(52, 211, 153, .15);
+      color: #34d399
+    }
+
+    .mcat-collab {
+      background: rgba(251, 191, 36, .15);
+      color: #fbbf24
+    }
+
+    .modal-title {
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 8px;
+      transition: color .4s
+    }
+
+    .modal-desc {
+      font-size: 13.5px;
+      color: var(--text2);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      transition: color .4s
+    }
+
+    .modal-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 18px
+    }
+
+    .modal-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: var(--text3);
+      transition: color .4s
+    }
+
+    .modal-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text);
+      color: var(--bg);
+      padding: 10px 22px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform .25s cubic-bezier(.34, 1.56, .64, 1)
+    }
+
+    .modal-cta:hover {
+      transform: scale(1.04)
+    }
+
+    .tl-loading {
+      text-align: center;
+      padding: 60px 0;
+      color: var(--text3);
+      font-size: 14px
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 3px
+    }
+  </style>
+
+  <div class="page-header">
+    <h1 class="page-title">Creatives</h1>
+    <p class="page-desc">A curated collection of motion work — brand reels, product films, and personal edits crafted
+      for
+      clients and side projects.</p>
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-gem"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-item">
+      <div class="stat-val">38</div>
+      <div class="stat-label">Total Edits</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-val">12</div>
+      <div class="stat-label">Clients</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-val">2.4M</div>
+      <div class="stat-label">Total Views</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-val">4</div>
+      <div class="stat-label">Platforms</div>
+    </div>
+  </div>
+
+  <div class="filter-row" id="filterRow">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="company">Company</button>
+    <button class="filter-btn" data-filter="personal">Personal</button>
+    <button class="filter-btn" data-filter="client">Client</button>
+    <button class="filter-btn" data-filter="collab">Collab</button>
+  </div>
+
+  <main>
+    <div class="reels-grid" id="reelsGrid">
+      <div class="tl-loading">Loading creatives...</div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="modal">
+      <div style="position:relative">
+        <div class="modal-thumb" id="modalThumb">
+          <div id="modalThumbBg" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+          </div>
+          <div class="modal-thumb-overlay">
+            <div class="modal-play-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#1a1814">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <button class="modal-close" id="modalClose">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M1 1l10 10M11 1L1 11" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <span class="modal-cat-tag" id="modalCat"></span>
+        <div class="modal-title" id="modalTitle"></div>
+        <div class="modal-desc" id="modalDesc"></div>
+        <div class="modal-meta-row" id="modalMeta"></div>
+        <a href="#" class="modal-cta" id="modalCta" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+          Watch on <span id="modalPlatform"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const PLAT_ICONS = {
+      YouTube: `<svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.13C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.56A3.02 3.02 0 0 0 .5 6.19C0 8.02 0 12 0 12s0 3.98.5 5.81a3.02 3.02 0 0 0 2.12 2.13C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.56a3.02 3.02 0 0 0 2.12-2.13C24 15.98 24 12 24 12s0-3.98-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>`,
+      Instagram: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="white" stroke="none"/></svg>`,
+      Behance: `<svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.72zm-7.73-3.63c-.023-.606.043-2.51 2.3-2.51 2.25 0 2.28 1.93 2.28 2.51h-4.58zM7.27 10.148c.794 0 1.536.171 1.536 1.073 0 .903-.742 1.074-1.536 1.074H4.865v-2.147H7.27zm.42 5.1c.95 0 1.694-.19 1.694-1.25 0-1.06-.744-1.25-1.694-1.25H4.865v2.5H7.69zM0 4h11.25C14.188 4 16 5.625 16 8.25c0 1.688-.938 2.813-2.5 3.375 2 .5 3.125 1.938 3.125 3.938C16.625 18.25 14.688 20 11.5 20H0V4z"/></svg>`,
+      Dribbble: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>`,
+      Twitter: `<svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`
+    };
+
+    const CAT_PILL = { company: 'pill-company', personal: 'pill-personal', client: 'pill-client', collab: 'pill-collab' };
+    const CAT_MODAL = { company: 'mcat-company', personal: 'mcat-personal', client: 'mcat-client', collab: 'mcat-collab' };
+
+    function thumbIcon(category) {
+      const icons = {
+        company: `<svg width="64" height="64" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="10" stroke="white" stroke-width="1.5" fill="none" opacity=".35"/><path d="M10 8l6 4-6 4V8z"/></svg>`,
+        personal: `<svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>`,
+        client: `<svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
+        collab: `<svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.85"/></svg>`
+      };
+      return icons[category] || icons.company;
+    }
+
+    function buildCard(r) {
+      const bg = r.bg.replace(/ /g, ',');
+      const cls = ['reel-card', r.featured === 'true' ? 'featured' : ''].filter(Boolean).join(' ');
+      const platIcon = PLAT_ICONS[r.platform] || '';
+      return `
+    <div class="${cls}" data-id="${r.id}">
+      <div class="reel-thumb">
+        <div class="thumb-bg" style="background:${bg}">${thumbIcon(r.category)}</div>
+        <div class="thumb-overlay"></div>
+        <div class="play-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--text)"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="platform-badge plat-${r.platform}">${platIcon}</div>
+        <span class="cat-pill ${CAT_PILL[r.category] || ''}">${r.category}</span>
+        <span class="duration-badge">${r.duration}</span>
+      </div>
+      <div class="reel-body">
+        <div class="reel-title">${r.title}</div>
+        <div class="reel-meta">
+          <span class="reel-client">${r.client}</span>
+          <span class="reel-dot"></span>
+          <span class="reel-date">${r.date}</span>
+          <span class="reel-dot"></span>
+          <span class="reel-views">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" opacity=".6"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+            ${r.views}
+          </span>
+        </div>
+      </div>
+      <div class="reel-hint"><span class="hint-text">↗ Watch on ${r.platform}</span></div>
+    </div>`;
+    }
+
+    let REELS = [];
+
+    async function init() {
+      REELS = await fetchCSV('/data/creatives.csv');
+      renderGrid('all');
+    }
+
+    function renderGrid(filter) {
+      const grid = document.getElementById('reelsGrid');
+      const filtered = filter === 'all' ? REELS : REELS.filter(r => r.category === filter);
+      grid.innerHTML = filtered.map(buildCard).join('');
+
+      const io = new IntersectionObserver(entries => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 60); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.08 });
+      grid.querySelectorAll('.reel-card').forEach(el => {
+        io.observe(el);
+        el.addEventListener('click', () => openModal(REELS.find(r => r.id === el.dataset.id)));
+      });
+    }
+
+    function openModal(r) {
+      const bg = r.bg.replace(/ /g, ',');
+      const tb = document.getElementById('modalThumbBg');
+      tb.style.cssText = `background:${bg};width:100%;height:100%;display:flex;align-items:center;justify-content:center;`;
+      tb.innerHTML = thumbIcon(r.category);
+      const cat = document.getElementById('modalCat');
+      cat.className = `modal-cat-tag ${CAT_MODAL[r.category] || ''}`;
+      cat.textContent = r.category;
+      document.getElementById('modalTitle').textContent = r.title;
+      document.getElementById('modalDesc').textContent = r.desc;
+      document.getElementById('modalMeta').innerHTML = `
+    <div class="modal-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" opacity=".5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></svg>${r.duration}</div>
+    <div class="modal-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" opacity=".5"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>${r.views} views</div>
+    <div class="modal-meta-item"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" opacity=".5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>${r.date}</div>
+    <div class="modal-meta-item">${r.platform}</div>`;
+      document.getElementById('modalCta').href = r.link;
+      document.getElementById('modalPlatform').textContent = r.platform;
+      document.getElementById('modalBackdrop').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('modalBackdrop').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    document.getElementById('modalBackdrop').addEventListener('click', e => { if (e.target === e.currentTarget) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    document.getElementById('filterRow').addEventListener('click', e => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderGrid(btn.dataset.filter);
+    });
+
+    init();
+  </script>
+  <footer>
+    <div class="footer-contents">
+      <div>
+        <h3 class="gr8bh">Rajiv Kumar</h3>
+      </div>
+      <div class="footer-links">
+        <div class="gr8bh"><a class="gr8bh" href="/links">links</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/techstack">techstack</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/timeline">timeline</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/work">work</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/creative">creatives</a></div>
+      </div>
+      <div style="height: 300px; align-content: flex-end;">
+        <h4 class="gr8bh">✦ Passionate Professional Programmer ✦</h4>
+        <div style="font-size:12px;color:var(--text3);margin-top:6px;transition:color .4s">
+          © <span id="footerYear"></span> Rajiv Kumar. All rights reserved.
+        </div>
+      </div>
+      <div style="height: 30px;"></div>
+    </div>
+  </footer>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+  <script src="/common.js"></script>
+</body>
+
+</html>

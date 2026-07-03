@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajiv Kumar — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url('./header-gradient.svg');background-repeat: no-repeat;">
+
+  <div class="ambient">
+    <div class="ambient-blob"></div>
+    <div class="ambient-blob"></div>
+    <div class="ambient-blob"></div>
+  </div>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+
+  <nav id="mainNav">
+    <!-- avatar (desktop) -->
+    <div class="nav-avatar" id="navAvatar">R</div>
+    <a href="/timeline" onclick="window.location.href='timeline'" class="nav-link  mobtimelinelink"
+      style="position:relative">
+      timeline
+      <span class="nav-badge">1</span>
+    </a>
+    <!-- desktop links -->
+    <div class="nav-links">
+      <a href="/timeline" onclick="window.location.href='timeline'" class="nav-link active" style="position:relative">
+        timeline
+        <span class="nav-badge">1</span>
+      </a>
+      <a href="/work" onclick="window.location.href='work'" class="nav-link">work</a>
+      <a href="/about" onclick="window.location.href='about'" class="nav-link">about</a>
+      <a href="/story" onclick="window.location.href='story'" class="nav-link">story</a>
+
+
+      <div class="nav-more" id="navMore">
+        <button class="nav-more-btn" id="moreBtn">
+          more
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none">
+            <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="dropdown" id="dropdown">
+          <a href="/creative" onclick="window.location.href='creative'">Creatives</a>
+          <a href="/links" onclick="window.location.href='links'">links</a>
+
+          <a href="/techstack" onclick="window.location.href='techstack'">tech stack</a>
+          <a href="https://instagram.com/troubleshooter.rajiv/" target="_blank">photos</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- divider -->
+    <div class="nav-divider"></div>
+
+    <!-- icon actions -->
+    <div class="nav-actions">
+      <a href="https://instagram/troubleshooter.rajiv/" class="nav-icon-btn" title="Instagam">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor"
+            stroke-width="2" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </a>
+      <!-- Figma -->
+      <a class="nav-icon-btn" title="linkedin" href="https://www.linkedin.com/in/rajiv-kumar-dev/">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+      <!-- Twitter -->
+      <a href="https://x.com/RajivKumar31499" class="nav-icon-btn" title="Twitter">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      </a>
+      <!-- Theme toggle -->
+      <button class="nav-icon-btn theme-btn" id="themeBtn" title="Toggle theme">
+        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+      <!-- Hamburger — mobile only -->
+      <button class="nav-icon-btn nav-mobile-toggle" id="hamburgerBtn" title="Menu" aria-label="Open menu">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+          <rect x="2" y="5" width="16" height="1.8" rx="0.9" fill="currentColor" />
+          <rect x="2" y="9.1" width="11" height="1.8" rx="0.9" fill="currentColor" />
+          <rect x="2" y="13.2" width="14" height="1.8" rx="0.9" fill="currentColor" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+     MOBILE SLIDE DRAWER
+═════════════════════════════════════════════ -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <!-- header -->
+    <div class="drawer-header">
+      <div class="drawer-logo">
+        <div class="drawer-avatar">R</div>
+        <div>
+          <div class="drawer-name">Rajiv Kumar</div>
+          <div class="drawer-handle">@troubleshooter.rajiv</div>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- body -->
+    <div class="drawer-body">
+      <div class="drawer-section-label">Navigation</div>
+
+      <a href="/timeline" onclick="window.location.href='timeline'" class="drawer-link active" id="dl-timeline">
+        <span>timeline</span>
+        <span class="drawer-badge">1</span>
+      </a>
+      <a href="/work" onclick="window.location.href='work'" class="drawer-link" id="dl-work">
+        <span>work</span>
+      </a>
+      <a href="/creative" onclick="window.location.href='creative'" class="drawer-link" id="dl-creative">
+        <span>creatives</span>
+      </a>
+      <a href="/about" onclick="window.location.href='about'" class="drawer-link" id="dl-about">
+        <span>about</span>
+      </a>
+      <a href="/story" onclick="window.location.href='story'" class="drawer-link" id="dl-story">
+        <span>story</span>
+      </a>
+
+      <div class="drawer-divider"></div>
+      <div class="drawer-section-label">More</div>
+
+      <a href="/links" onclick="window.location.href='links'" class="drawer-link">links</a>
+
+      <a href="/techstack" onclick="window.location.href='techstack'" class="drawer-link">tech stack</a>
+      <a href="https://instagram.com/troubleshooter.rajiv/" target="_blank" class="drawer-link">photos</a>
+
+    </div>
+  </div>
+
+  <style>
+    .page-header {
+      text-align: center;
+      padding: 100px 24px 40px;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      animation: fadeUp .7s .15s cubic-bezier(.4, 0, .2, 1) forwards
+    }
+
+    .page-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(40px, 7vw, 66px);
+      font-weight: 400;
+      background: linear-gradient(135deg, #fbbf24 0%, #f472b6 50%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      background-size: 200% 200%;
+      animation: gradShift 6s ease infinite
+    }
+
+    @keyframes gradShift {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    .page-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text2);
+      max-width: 420px;
+      margin: 0 auto 24px;
+      transition: color .4s
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 28px
+    }
+
+    .divider-line {
+      height: 1px;
+      width: 80px;
+      background: var(--border);
+      transition: background .4s
+    }
+
+    .divider-gem {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      background: linear-gradient(135deg, #fbbf24, #f472b6);
+      transform: rotate(45deg);
+      animation: gemPulse 3s ease-in-out infinite
+    }
+
+    .divider-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--text3);
+      transition: background .4s
+    }
+
+    @keyframes gemPulse {
+
+      0%,
+      100% {
+        transform: rotate(45deg) scale(1)
+      }
+
+      50% {
+        transform: rotate(45deg) scale(1.2);
+        box-shadow: 0 0 12px rgba(251, 191, 36, .4)
+      }
+    }
+
+    .filter-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 0 auto 32px;
+      flex-wrap: wrap;
+      padding: 0 24px
+    }
+
+    .filter-btn {
+      padding: 8px 20px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text2);
+      font-size: 13px;
+      font-weight: 500;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: all .25s cubic-bezier(.4, 0, .2, 1);
+      box-shadow: var(--card-shadow)
+    }
+
+    .filter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--card-hover-shadow);
+      color: var(--text)
+    }
+
+    .filter-btn.active {
+      background: var(--text);
+      color: var(--bg);
+      border-color: var(--text)
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px 80px
+    }
+
+    .links-section {
+      margin-bottom: 40px
+    }
+
+    .links-section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text3);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color .4s
+    }
+
+    .links-section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+      transition: background .4s
+    }
+
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-radius: 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      box-shadow: var(--card-shadow);
+      transition: transform .25s cubic-bezier(.34, 1.56, .64, 1), box-shadow .25s, border-color .25s, background .4s;
+      opacity: 0;
+      transform: translateX(-12px)
+    }
+
+    .link-item.visible {
+      animation: slideIn .4s cubic-bezier(.4, 0, .2, 1) forwards
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0)
+      }
+    }
+
+    .link-item:hover {
+      transform: translateX(6px);
+      box-shadow: var(--card-hover-shadow);
+      border-color: rgba(251, 191, 36, .2)
+    }
+
+    .link-left {
+      display: flex;
+      flex-direction: column;
+      gap: 2px
+    }
+
+    .link-label {
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--text);
+      transition: color .4s
+    }
+
+    .link-desc {
+      font-size: 12.5px;
+      color: var(--text3);
+      transition: color .4s
+    }
+
+    .link-arrow {
+      color: var(--text3);
+      transition: transform .2s, color .2s;
+      flex-shrink: 0
+    }
+
+    .link-item:hover .link-arrow {
+      transform: translateX(4px);
+      color: var(--text2)
+    }
+
+    .tl-loading {
+      text-align: center;
+      padding: 60px 0;
+      color: var(--text3);
+      font-size: 14px
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 3px
+    }
+  </style>
+
+  <div class="page-header">
+    <h1 class="page-title">Links</h1>
+    <p class="page-desc">Everything I use, follow, and recommend — organized by category.</p>
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-gem"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+  </div>
+
+  <div class="filter-row" id="filterRow">
+    <button class="filter-btn active" data-filter="all">All</button>
+  </div>
+
+  <main id="mainContent">
+    <div class="tl-loading">Loading links...</div>
+  </main>
+
+  <script>
+    async function init() {
+      const data = await fetchCSV('/data/links.csv');
+      const grouped = {};
+      data.forEach(row => {
+        if (!grouped[row.category]) grouped[row.category] = [];
+        grouped[row.category].push(row);
+      });
+
+      // Build filter buttons
+      const filterRow = document.getElementById('filterRow');
+      Object.keys(grouped).forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.dataset.filter = cat;
+        btn.textContent = cat;
+        filterRow.appendChild(btn);
+      });
+
+      filterRow.addEventListener('click', e => {
+        const btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderLinks(btn.dataset.filter === 'all' ? null : btn.dataset.filter, grouped);
+      });
+
+      renderLinks(null, grouped);
+    }
+
+    function renderLinks(filterCat, grouped) {
+      const main = document.getElementById('mainContent');
+      const cats = filterCat ? [filterCat] : Object.keys(grouped);
+      main.innerHTML = cats.map(cat => `
+    <div class="links-section">
+      <div class="links-section-label">${cat}</div>
+      <div class="link-list">${grouped[cat].map((l, i) => `
+        <a href="${l.url}" class="link-item" target="_blank" rel="noopener" style="animation-delay:${i * 0.04}s">
+          <div class="link-left">
+            <div class="link-label">${l.label}</div>
+            ${l.desc ? `<div class="link-desc">${l.desc}</div>` : ''}
+          </div>
+          <div class="link-arrow"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12l4-4-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </a>`).join('')}
+      </div>
+    </div>`).join('');
+
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+      }, { threshold: 0.05 });
+      main.querySelectorAll('.link-item').forEach(el => io.observe(el));
+    }
+
+    init();
+  </script>
+
+  <footer>
+    <div class="footer-contents">
+      <div>
+        <h3 class="gr8bh">Rajiv Kumar</h3>
+      </div>
+      <div class="footer-links">
+        <div class="gr8bh"><a class="gr8bh" href="/links">links</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/techstack">techstack</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/timeline">timeline</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/work">work</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/creative">creatives</a></div>
+      </div>
+      <div style="height: 300px; align-content: flex-end;">
+        <h4 class="gr8bh">✦ Passionate Professional Programmer ✦</h4>
+        <div style="font-size:12px;color:var(--text3);margin-top:6px;transition:color .4s">
+          © <span id="footerYear"></span> Rajiv Kumar. All rights reserved.
+        </div>
+      </div>
+      <div style="height: 30px;"></div>
+    </div>
+  </footer>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+  <script src="/common.js"></script>
+</body>
+
+</html>

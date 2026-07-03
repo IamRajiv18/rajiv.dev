@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajiv Kumar — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url('./header-gradient.svg');background-repeat: no-repeat;">
+
+  <div class="ambient">
+    <div class="ambient-blob"></div>
+    <div class="ambient-blob"></div>
+    <div class="ambient-blob"></div>
+  </div>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+
+  <nav id="mainNav">
+    <!-- avatar (desktop) -->
+    <div class="nav-avatar" id="navAvatar">R</div>
+    <a href="/timeline" onclick="window.location.href='timeline'" class="nav-link  mobtimelinelink"
+      style="position:relative">
+      timeline
+      <span class="nav-badge">1</span>
+    </a>
+    <!-- desktop links -->
+    <div class="nav-links">
+      <a href="/timeline" onclick="window.location.href='timeline'" class="nav-link active" style="position:relative">
+        timeline
+        <span class="nav-badge">1</span>
+      </a>
+      <a href="/work" onclick="window.location.href='work'" class="nav-link">work</a>
+      <a href="/about" onclick="window.location.href='about'" class="nav-link">about</a>
+      <a href="/story" onclick="window.location.href='story'" class="nav-link">story</a>
+
+
+      <div class="nav-more" id="navMore">
+        <button class="nav-more-btn" id="moreBtn">
+          more
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none">
+            <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="dropdown" id="dropdown">
+          <a href="/creative" onclick="window.location.href='creative'">Creatives</a>
+          <a href="/links" onclick="window.location.href='links'">links</a>
+
+          <a href="/techstack" onclick="window.location.href='techstack'">tech stack</a>
+          <a href="https://instagram.com/troubleshooter.rajiv/" target="_blank">photos</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- divider -->
+    <div class="nav-divider"></div>
+
+    <!-- icon actions -->
+    <div class="nav-actions">
+      <a href="https://instagram/troubleshooter.rajiv/" class="nav-icon-btn" title="Instagam">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor"
+            stroke-width="2" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </a>
+      <!-- Figma -->
+      <a class="nav-icon-btn" title="linkedin" href="https://www.linkedin.com/in/rajiv-kumar-dev/">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+      <!-- Twitter -->
+      <a href="https://x.com/RajivKumar31499" class="nav-icon-btn" title="Twitter">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      </a>
+      <!-- Theme toggle -->
+      <button class="nav-icon-btn theme-btn" id="themeBtn" title="Toggle theme">
+        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+      <!-- Hamburger — mobile only -->
+      <button class="nav-icon-btn nav-mobile-toggle" id="hamburgerBtn" title="Menu" aria-label="Open menu">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+          <rect x="2" y="5" width="16" height="1.8" rx="0.9" fill="currentColor" />
+          <rect x="2" y="9.1" width="11" height="1.8" rx="0.9" fill="currentColor" />
+          <rect x="2" y="13.2" width="14" height="1.8" rx="0.9" fill="currentColor" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+     MOBILE SLIDE DRAWER
+═════════════════════════════════════════════ -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <!-- header -->
+    <div class="drawer-header">
+      <div class="drawer-logo">
+        <div class="drawer-avatar">R</div>
+        <div>
+          <div class="drawer-name">Rajiv Kumar</div>
+          <div class="drawer-handle">@troubleshooter.rajiv</div>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- body -->
+    <div class="drawer-body">
+      <div class="drawer-section-label">Navigation</div>
+
+      <a href="/timeline" onclick="window.location.href='timeline'" class="drawer-link active" id="dl-timeline">
+        <span>timeline</span>
+        <span class="drawer-badge">1</span>
+      </a>
+      <a href="/work" onclick="window.location.href='work'" class="drawer-link" id="dl-work">
+        <span>work</span>
+      </a>
+      <a href="/creative" onclick="window.location.href='creative'" class="drawer-link" id="dl-creative">
+        <span>creatives</span>
+      </a>
+      <a href="/about" onclick="window.location.href='about'" class="drawer-link" id="dl-about">
+        <span>about</span>
+      </a>
+      <a href="/story" onclick="window.location.href='story'" class="drawer-link" id="dl-story">
+        <span>story</span>
+      </a>
+
+      <div class="drawer-divider"></div>
+      <div class="drawer-section-label">More</div>
+
+      <a href="/links" onclick="window.location.href='links'" class="drawer-link">links</a>
+
+      <a href="/techstack" onclick="window.location.href='techstack'" class="drawer-link">tech stack</a>
+      <a href="https://instagram.com/troubleshooter.rajiv/" target="_blank" class="drawer-link">photos</a>
+
+    </div>
+  </div>
+
+  <style>
+    .page-header {
+      text-align: center;
+      padding: 100px 24px 48px;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      animation: fadeUp .7s .15s cubic-bezier(.4, 0, .2, 1) forwards
+    }
+
+    .page-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(40px, 7vw, 68px);
+      font-weight: 400;
+      background: linear-gradient(135deg, #e84b3a 0%, #f472b6 50%, #fbbf24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 18px;
+      background-size: 200% 200%;
+      animation: gradShift 6s ease infinite
+    }
+
+    @keyframes gradShift {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    .page-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text2);
+      max-width: 500px;
+      margin: 0 auto 28px;
+      text-align: center;
+      transition: color .4s
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 40px
+    }
+
+    .divider-line {
+      height: 1px;
+      width: 80px;
+      background: var(--border);
+      transition: background .4s
+    }
+
+    .divider-gem {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      background: linear-gradient(135deg, #e84b3a, #f472b6);
+      transform: rotate(45deg);
+      animation: gemPulse 3s ease-in-out infinite
+    }
+
+    .divider-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--text3);
+      transition: background .4s
+    }
+
+    @keyframes gemPulse {
+
+      0%,
+      100% {
+        transform: rotate(45deg) scale(1)
+      }
+
+      50% {
+        transform: rotate(45deg) scale(1.2);
+        box-shadow: 0 0 12px rgba(232, 75, 58, .4)
+      }
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px 80px
+    }
+
+    /* Chapter entry */
+    .story-chapter {
+      margin-bottom: 56px;
+      opacity: 0;
+      transform: translateY(20px)
+    }
+
+    .story-chapter.visible {
+      animation: fadeUp .6s cubic-bezier(.4, 0, .2, 1) forwards
+    }
+
+    .chapter-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text3);
+      margin-bottom: 16px;
+      transition: color .4s
+    }
+
+    .chapter-label::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 1px
+    }
+
+    .chapter-heading {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(22px, 4vw, 30px);
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 16px;
+      line-height: 1.3;
+      transition: color .4s
+    }
+
+    .chapter-body {
+      font-size: 15.5px;
+      line-height: 1.9;
+      color: var(--text2);
+      transition: color .4s
+    }
+
+    .chapter-body p {
+      margin-bottom: 16px
+    }
+
+    .chapter-body p:last-child {
+      margin-bottom: 0
+    }
+
+    .chapter-body a {
+      color: var(--accent2);
+      text-decoration: none
+    }
+
+    .chapter-body a:hover {
+      text-decoration: underline
+    }
+
+    .chapter-body strong {
+      color: var(--text);
+      font-weight: 500
+    }
+
+    /* Pull quote */
+    .pull-quote {
+      margin: 28px 0;
+      padding: 20px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent2);
+      border-radius: 0 14px 14px 0;
+      box-shadow: var(--card-shadow);
+      transition: background .4s, border-color .4s
+    }
+
+    .pull-quote p {
+      font-family: 'Instrument Serif', serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--text);
+      font-style: italic;
+      margin: 0;
+      transition: color .4s
+    }
+
+    /* Year badge */
+    .year-badge {
+      display: inline-block;
+      font-family: 'Instrument Serif', serif;
+      font-size: 13px;
+      color: var(--text3);
+      padding: 4px 12px;
+      border-radius: 100px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      margin-bottom: 20px;
+      transition: background .4s, border-color .4s
+    }
+
+    /* Divider between chapters */
+    .chapter-divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 48px 0;
+      color: var(--text3)
+    }
+
+    .chapter-divider::before,
+    .chapter-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+      transition: background .4s
+    }
+
+    .chapter-divider-icon {
+      font-size: 14px
+    }
+
+    /* Closing */
+    .story-closing {
+      text-align: center;
+      padding: 40px 0 0;
+      opacity: 0;
+      transform: translateY(16px)
+    }
+
+    .story-closing.visible {
+      animation: fadeUp .6s .2s cubic-bezier(.4, 0, .2, 1) forwards
+    }
+
+    .story-closing-text {
+      font-family: 'Instrument Serif', serif;
+      font-size: 20px;
+      color: var(--text2);
+      line-height: 1.6;
+      margin-bottom: 24px;
+      transition: color .4s
+    }
+
+    .story-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 100px;
+      background: var(--text);
+      color: var(--bg);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform .25s cubic-bezier(.34, 1.56, .64, 1), opacity .2s
+    }
+
+    .story-cta:hover {
+      transform: scale(1.04)
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 3px
+    }
+  </style>
+
+  <div class="page-header">
+    <h1 class="page-title">The Story</h1>
+    <p class="page-desc">How a curious kid with a laptop became someone who builds things for a living — and never wants
+      to stop.</p>
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-gem"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+  </div>
+
+  <main>
+
+    <div class="story-chapter">
+      <div class="year-badge">2021 — The Beginning</div>
+      <div class="chapter-label">Chapter 01</div>
+      <div class="chapter-heading">It started with a blank page.</div>
+      <div class="chapter-body">
+        <p>I remember the exact moment. A tutorial, a text editor, and a browser that somehow turned my words into a
+          webpage. It was just <strong>Hello World</strong> in HTML — but that was enough. I was hooked.</p>
+        <p>I had no idea what I was getting into. No computer science background, no mentor, no roadmap. Just curiosity
+          and a lot of tabs open.</p>
+        <div class="pull-quote">
+          <p>"Every developer remembers the first time something they wrote actually worked. For me, it felt like
+            discovering a superpower."</p>
+        </div>
+        <p>I started from scratch — HTML, then CSS, then the terrifying and wonderful world of JavaScript. I broke
+          things
+          constantly. I fixed them. I broke them again. That loop became my education.</p>
+      </div>
+    </div>
+
+    <div class="chapter-divider"><span class="chapter-divider-icon">✦</span></div>
+
+    <div class="story-chapter">
+      <div class="year-badge">2022 — Going Deeper</div>
+      <div class="chapter-label">Chapter 02</div>
+      <div class="chapter-heading">PHP became my first real obsession.</div>
+      <div class="chapter-body">
+        <p>I picked up PHP and it changed everything. Suddenly I could build things that actually <em>did</em> something
+          —
+          forms that saved data, login systems, admin dashboards. The web felt alive for the first time.</p>
+        <p>I started with small projects and quickly got obsessed with making them better. Cleaner code, better UX,
+          smarter backend. Each project taught me something new — <strong>MySQL queries, session handling,
+            AJAX</strong>,
+          the whole stack.</p>
+        <p>I also discovered that I genuinely loved design. Not just writing code, but thinking about how something
+          feels
+          to use. That combination — code AND design — became my thing.</p>
+      </div>
+    </div>
+
+    <div class="chapter-divider"><span class="chapter-divider-icon">✦</span></div>
+
+    <div class="story-chapter">
+      <div class="year-badge">2023 — First Real Work</div>
+      <div class="chapter-label">Chapter 03</div>
+      <div class="chapter-heading">I built my first production system.</div>
+      <div class="chapter-body">
+        <p>In 2023, I graduated with my BCA and immediately went full-time on building. My first real project was a
+          <strong>custom admin panel</strong> — role-based access control, audit logs, task calendar, the works. I built
+          it end-to-end, deployed it, and watched real people use it.
+        </p>
+        <p>That feeling is hard to describe. Knowing that something you made is running in the real world, with real
+          data,
+          helping real people. It's different from any project or tutorial. It made everything click.</p>
+        <div class="pull-quote">
+          <p>"The best learning is building something that matters to someone. A tutorial teaches you syntax. A real
+            project teaches you everything else."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter-divider"><span class="chapter-divider-icon">✦</span></div>
+
+    <div class="story-chapter">
+      <div class="year-badge">2024–2025 — Expanding</div>
+      <div class="chapter-label">Chapter 04</div>
+      <div class="chapter-heading">Platforms, clients, and new frontiers.</div>
+      <div class="chapter-body">
+        <p>I spent the next two years building full-scale platforms — <a href="https://gaurangaconsultancy.com/"
+            target="_blank">Gauranga Consultancy</a>, <a href="https://chitastatemedicalacademy.in/"
+            target="_blank">Chita
+            State Medical Academy</a>, <a href="https://amurstatemedicalacademy.com/" target="_blank">Amur State Medical
+            Academy</a>. Each one taught me something new about scale, UX, and client collaboration.</p>
+        <p>I also started leaning heavily into <strong>security</strong> — AES-256 encryption, PBKDF2 key derivation,
+          OWASP practices. I built a credential vault from scratch. I wrote Python automation scripts. I started
+          learning
+          Blender and video editing on the side.</p>
+        <p>Turns out I like making things look good as much as I like making them work.</p>
+      </div>
+    </div>
+
+    <div class="chapter-divider"><span class="chapter-divider-icon">✦</span></div>
+
+    <div class="story-chapter">
+      <div class="year-badge">2026 — Now</div>
+      <div class="chapter-label">Chapter 05</div>
+      <div class="chapter-heading">Building what I love.</div>
+      <div class="chapter-body">
+        <p>Right now I'm doing three things: contract work, creative projects under <a
+            href="https://instagram.com/bash.rajiv/" target="_blank">@bash.rajiv</a>, and slowly building my first indie
+          game — <strong>Project Artist and Cat</strong>.</p>
+        <p>The game is something I've been dreaming about for years. It's 2D, narrative-driven, and completely
+          hand-crafted. I'm doing the art, the code, the sound direction — everything. It's the hardest and most
+          exciting
+          thing I've ever worked on.</p>
+        <p>The story isn't over. Honestly, it feels like it's just getting started.</p>
+      </div>
+    </div>
+
+    <div class="story-closing">
+      <div class="story-closing-text">Want to work together or just say hi?</div>
+      <a href="https://www.linkedin.com/in/rajiv-kumar-dev/" target="_blank" class="story-cta">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+        Connect on LinkedIn
+      </a>
+    </div>
+
+  </main>
+
+  <script>
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.story-chapter,.story-closing').forEach(el => io.observe(el));
+  </script>
+  <footer>
+    <div class="footer-contents">
+      <div>
+        <h3 class="gr8bh">Rajiv Kumar</h3>
+      </div>
+      <div class="footer-links">
+        <div class="gr8bh"><a class="gr8bh" href="/links">links</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/techstack">techstack</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/timeline">timeline</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/work">work</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="/creative">creatives</a></div>
+      </div>
+      <div style="height: 300px; align-content: flex-end;">
+        <h4 class="gr8bh">✦ Passionate Professional Programmer ✦</h4>
+        <div style="font-size:12px;color:var(--text3);margin-top:6px;transition:color .4s">
+          © <span id="footerYear"></span> Rajiv Kumar. All rights reserved.
+        </div>
+      </div>
+      <div style="height: 30px;"></div>
+    </div>
+  </footer>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+  <script src="/common.js"></script>
+</body>
+
+</html>
