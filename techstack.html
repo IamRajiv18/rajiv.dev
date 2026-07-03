@@ -26,21 +26,22 @@
 
   <nav id="mainNav">
     <!-- avatar (desktop) -->
-    <div class="nav-avatar" id="navAvatar">R</div>
-    <a href="/timeline" onclick="window.location.href='timeline'" class="nav-link  mobtimelinelink"
-      style="position:relative">
+    <a href="index.php" style="text-decoration:none;">
+      <div class="nav-avatar" id="navAvatar">R</div>
+    </a>
+    <a href="timeline.php" class="nav-link  mobtimelinelink" style="position:relative">
       timeline
       <span class="nav-badge">1</span>
     </a>
     <!-- desktop links -->
     <div class="nav-links">
-      <a href="/timeline" onclick="window.location.href='timeline'" class="nav-link active" style="position:relative">
+      <a href="timeline.php" class="nav-link active" style="position:relative">
         timeline
         <span class="nav-badge">1</span>
       </a>
-      <a href="/work" onclick="window.location.href='work'" class="nav-link">work</a>
-      <a href="/about" onclick="window.location.href='about'" class="nav-link">about</a>
-      <a href="/story" onclick="window.location.href='story'" class="nav-link">story</a>
+      <a href="work.php" class="nav-link">work</a>
+      <a href="about.php" class="nav-link">about</a>
+      <a href="story.php" class="nav-link">story</a>
 
 
       <div class="nav-more" id="navMore">
@@ -52,10 +53,10 @@
           </svg>
         </button>
         <div class="dropdown" id="dropdown">
-          <a href="/creative" onclick="window.location.href='creative'">Creatives</a>
-          <a href="/links" onclick="window.location.href='links'">links</a>
+          <a href="creative.php">Creatives</a>
+          <a href="links.php">links</a>
 
-          <a href="/techstack" onclick="window.location.href='techstack'">tech stack</a>
+          <a href="techstack.php">tech stack</a>
           <a href="https://instagram.com/troubleshooter.rajiv/" target="_blank">photos</a>
 
         </div>
@@ -67,7 +68,7 @@
 
     <!-- icon actions -->
     <div class="nav-actions">
-      <a href="https://instagram/troubleshooter.rajiv/" class="nav-icon-btn" title="Instagam">
+      <a href="https://instagram.com/troubleshooter.rajiv/" class="nav-icon-btn" title="Instagram" target="_blank">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
           <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor"
@@ -75,8 +76,8 @@
           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
         </svg>
       </a>
-      <!-- Figma -->
-      <a class="nav-icon-btn" title="linkedin" href="https://www.linkedin.com/in/rajiv-kumar-dev/">
+      <!-- LinkedIn -->
+      <a class="nav-icon-btn" title="LinkedIn" href="https://www.linkedin.com/in/rajiv-kumar-dev/" target="_blank">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
           <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
           <rect x="2" y="9" width="4" height="12" />
@@ -84,7 +85,7 @@
         </svg>
       </a>
       <!-- Twitter -->
-      <a href="https://x.com/RajivKumar31499" class="nav-icon-btn" title="Twitter">
+      <a href="https://x.com/RajivKumar31499" class="nav-icon-btn" title="Twitter" target="_blank">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
           <path
             d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -146,29 +147,29 @@
     <div class="drawer-body">
       <div class="drawer-section-label">Navigation</div>
 
-      <a href="/timeline" onclick="window.location.href='timeline'" class="drawer-link active" id="dl-timeline">
+      <a href="timeline.php" class="drawer-link active" id="dl-timeline">
         <span>timeline</span>
         <span class="drawer-badge">1</span>
       </a>
-      <a href="/work" onclick="window.location.href='work'" class="drawer-link" id="dl-work">
+      <a href="work.php" class="drawer-link" id="dl-work">
         <span>work</span>
       </a>
-      <a href="/creative" onclick="window.location.href='creative'" class="drawer-link" id="dl-creative">
+      <a href="creative.php" class="drawer-link" id="dl-creative">
         <span>creatives</span>
       </a>
-      <a href="/about" onclick="window.location.href='about'" class="drawer-link" id="dl-about">
+      <a href="about.php" class="drawer-link" id="dl-about">
         <span>about</span>
       </a>
-      <a href="/story" onclick="window.location.href='story'" class="drawer-link" id="dl-story">
+      <a href="story.php" class="drawer-link" id="dl-story">
         <span>story</span>
       </a>
 
       <div class="drawer-divider"></div>
       <div class="drawer-section-label">More</div>
 
-      <a href="/links" onclick="window.location.href='links'" class="drawer-link">links</a>
+      <a href="links.php" class="drawer-link">links</a>
 
-      <a href="/techstack" onclick="window.location.href='techstack'" class="drawer-link">tech stack</a>
+      <a href="techstack.php" class="drawer-link">tech stack</a>
       <a href="https://instagram.com/troubleshooter.rajiv/" target="_blank" class="drawer-link">photos</a>
 
     </div>
@@ -674,8 +675,7 @@
   <div class="page-header">
     <h1 class="page-title">Tech Stack</h1>
     <p class="page-desc">The following is my on-the-go app stack for designing, coding, managing, entertaining, and
-      all...
-    </p>
+      all...</p>
     <div class="divider">
       <div class="divider-line"></div>
       <div class="divider-dot"></div>
@@ -683,7 +683,6 @@
       <div class="divider-dot"></div>
       <div class="divider-line"></div>
     </div>
-
     <div class="view-toggle">
       <span class="toggle-label">Grid</span>
       <div class="toggle-btns">
@@ -813,7 +812,7 @@
     }
 
     async function init() {
-      const data = await fetchCSV('/data/techstack.csv');
+      const data = await fetchCSV('data/techstack.csv');
       const grouped = {};
       data.forEach(row => {
         if (!grouped[row.section]) grouped[row.section] = [];
@@ -846,11 +845,11 @@
         <h3 class="gr8bh">Rajiv Kumar</h3>
       </div>
       <div class="footer-links">
-        <div class="gr8bh"><a class="gr8bh" href="/links">links</a></div>
-        <div class="gr8bh"><a class="gr8bh" href="/techstack">techstack</a></div>
-        <div class="gr8bh"><a class="gr8bh" href="/timeline">timeline</a></div>
-        <div class="gr8bh"><a class="gr8bh" href="/work">work</a></div>
-        <div class="gr8bh"><a class="gr8bh" href="/creative">creatives</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="links.php">links</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="techstack.php">techstack</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="timeline.php">timeline</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="work.php">work</a></div>
+        <div class="gr8bh"><a class="gr8bh" href="creative.php">creatives</a></div>
       </div>
       <div style="height: 300px; align-content: flex-end;">
         <h4 class="gr8bh">✦ Passionate Professional Programmer ✦</h4>
@@ -862,7 +861,7 @@
     </div>
   </footer>
   <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
-  <script src="/common.js"></script>
+  <script src="common.js"></script>
 </body>
 
 </html>

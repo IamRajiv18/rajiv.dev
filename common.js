@@ -1,6 +1,6 @@
 // ─── CSV UTILITY ───────────────────────────────────────────────────────────────
 /**
- * Fetch and parse a CSV file. Returns an array of objects keyed by header row. 
+ * Fetch and parse a CSV file. Returns an array of objects keyed by header row.
  * Handles quoted fields with commas inside.
  */
 async function fetchCSV(path) {
@@ -119,12 +119,11 @@ if (grid1 || grid2) {
 // ─── NAV ACTIVE STATE ─────────────────────────────────────────────────────────
 // Set active based on current URL path
 (function setNavActive() {
-  const path = window.location.pathname.replace(/\/$/, '') || '/';
+  const path = window.location.pathname;
   document.querySelectorAll('.nav-link, .drawer-link').forEach(link => {
     link.classList.remove('active');
     const href = link.getAttribute('href') || '';
-    const linkPath = href.replace(/\/$/, '') || '/';
-    if (path === linkPath || (path !== '/' && linkPath !== '/' && path.startsWith(linkPath))) {
+    if (href && href !== '#' && path.includes(href.replace('.php', ''))) {
       link.classList.add('active');
     }
   });
