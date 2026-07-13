@@ -1,0 +1,26 @@
+date,year,type,title,subtitle,simple,image
+Apr 18  2026,2026,work,CodeStorm Winner,competing against coders under intense time pressure,TRUE,data/img/codestorm.jpeg
+Apr 26 2025,2025,work,"International Conference on ""VISION 2047: PROSPEROUS & GREAT BHARAT""","Work International Conference on ""VISION 2047: PROSPEROUS & GREAT BHARAT"" Served as coordinator for this 3-day conference exploring India's roadmap toward becoming a developed nation by 2047.",TRUE,data/img/icar.webp
+Apr 17 2025,2025,work,Hackstasy [Hackathon],Built and pitched a project against the clock alongside fellow hackers at Hackstasy,TRUE,data/img/hackstasy.jpeg
+Apr 11 2025,2025,release,Convergence Indian Expo,Convergence Indian Expo Showcased explored emerging tech trends at the Convergence Indian Expo.,TRUE,data/img/cie.jpeg
+Apr 5 2025,2025,work,TechnoVision (CTF),Built the official CTF website for Tecnia's TechnoVision event and helped organize the cybersecurity challenge track.,TRUE,data/img/TecnoVision.png
+Apr 5 2025,2025,work,TechnoVision (TECH TOK),Pitched a startup concept at Tecnia Institute's entrepreneurship platform and got feedback from industry experts.,TRUE,data/img/tecktok.webp
+Mar 22 2025,2025,release,Kotlin User Group Gurugram: UDAAN 2025,Attended sessions on Kotlin and Android development at GL Bajaj networking with developers and experts.,TRUE,data/img/udaan.jpg
+Mar 2 2025,2025,work,Hackathon at SRM University,Built a project focused on improving user experience through design and technology.,TRUE,data/img/srmHack.png
+Feb 8 2025,2025,release,Gaming event at Lan Shack Gaming Cafe,Competed for fun and confidence ended up winning a game and taking home a prize.,TRUE,data/img/gaming.jpg
+Feb 7 2025,2025,release,AR/VR Session at IGDTUW Delhi,Got hands-on experience building a Snapchat filter in an AR/VR workshop.,TRUE,data/img/arVr.jpg
+Feb 1 2025,2025,work,UI/UX Hackathon (BECOM 2025 Fest IIT Delhi),Led team TheCompilers to redesign the digital presence of a circular-economy platform Trash to Cash.,TRUE,data/img/uiuxHack.jpg
+24-Dec,2024,release,Innova 2024 Delhi NCR (IIIT Delhi),Attended keynotes workshops and demos on emerging technologies with industry experts.,TRUE,data/img/innova.jpg
+24-Nov,2024,release,HackQuest X Gaia x EDU Chain Developer Meet-up,Learned Web3 and decentralized AI fundamentals joined an ideathon and networked with builders.,TRUE,data/img/hackquest.jpg
+24-Nov,2024,release,Cyber-Shield Summit (Microsoft IDC Noida),Attended keynotes and panels on cybersecurity trends threats and fraud prevention.,TRUE,data/img/digitalcybermskptwoer.jpg
+24-Nov,2024,release,Delta for Developers (Delta Blockchain Fund),Networked with Web3 founders and explored funding and collaboration opportunities.,TRUE,data/img/cafeWeb3.jpg
+24-Oct,2024,release,CNCG Gurugram Birthday Bash,Networked with professionals across industries including a Zomato engineer working on Gen AI solutions.,TRUE,data/img/cncg.jpg
+24-Sep,2024,work,Hack the Mountains 5.0,Participated in this hybrid hackathon.,TRUE,data/img/hackTheMountains.jpg
+24-Sep,2024,work,Code Red CTF (NIT Karnataka),Competed in a cybersecurity CTF covering vulnerability exploitation and reverse engineering.,TRUE,data/img/nit-krnatka-ctf.jpg
+24-Sep,2024,work,DevX JMI Hackathon - built SafeGuard,Built a real-time activity monitoring system with anomaly detection using MediaPipe and TensorFlow.,TRUE,data/img/22a58c48-e16c-4533-9c52-7a10fc9820cf.png
+24-Aug,2024,release,Great AppSec Hackathon 2024,Competed among 5000+ participants tackling MCQ and CTF rounds on application security.,TRUE,data/img/Great AppSecHackathon.png
+24-Jul,2024,release,AzureCopilotGameday (Microsoft Office Gurugram),Explored Azure Copilot's generative AI capabilities through hands-on sessions.,TRUE,data/img/azureGameDay.jpeg
+24-Jul,2024,release,Stellar Dev Yatra Delhi NCR (Rise In),Explored Web3 collaboration and knowledge-sharing with the developer community.,TRUE,data/img/rise-in.jpeg
+24-Jun,2024,work,NightsAndWeekends (buildspace Season 5),Built a project during nights and weekends alongside mentors and fellow builders.,TRUE,data/img/buildspace.jpeg
+24-Apr,2024,work,Event Volunteering (Local Community),Served as technical and management volunteer for a student mentorship event.,TRUE,data/img/April20.jpg
+24-Apr,2024,work,Bug Squash,Sharpened debugging skills fixing logic and syntax errors in a competitive C coding contest.,TRUE,data/img/bugsquash.png
