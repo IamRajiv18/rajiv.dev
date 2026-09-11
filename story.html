@@ -582,7 +582,7 @@
     }
 
     async function initStory() {
-      const data = await fetchCSV('data/story.csv');
+      const data = await fetchCSV('data/storsy.csv');
       
       const profItems = data.filter(d => d.type === 'professional');
       const persItems = data.filter(d => d.type === 'personal');
