@@ -1,0 +1,45 @@
+section,name,tag,desc,bg,icon
+Languages,PHP,backend,"Core backend language — MySQLi, sessions, AJAX handlers.",#4f5b93,https://pngimg.com/uploads/php/php_PNG43.png
+Languages,C++,backend,"Used for DSA, problem solving and core programming concepts.",#00599c,https://img.icons8.com/color/1200/c-plus-plus-logo.jpg
+Languages,Java,backend,Object-oriented programming and coursework fundamentals.,#e76f00,https://static.vecteezy.com/system/resources/previews/022/100/214/original/java-logo-transparent-free-png.png
+Languages,JavaScript,frontend,"Vanilla JS for AJAX, DOM and interactive UI logic.",#f0db4f,https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1280px-Unofficial_JavaScript_logo_2.svg.png
+Languages,Python,scripting,Selenium automation scripting and data tasks.,#306998,https://www.pngmart.com/files/23/Python-Logo-PNG-Clipart.png
+Languages,SQL,database,"MySQL/MySQLi queries, joins, schema design.",#00758f,https://www.pngfind.com/pngs/m/74-744138_mysql-logo-png-mysql-transparent-png.png
+Languages,HTML5,frontend,"Semantic markup for admin panels, forms and landing pages.",#e34f26,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png
+Languages,CSS3,frontend,"Scoped, custom UI styling — flexbox, grid and responsive layouts.",#1572b6,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/512px-CSS3_logo_and_wordmark.svg.png
+Frameworks & Libraries,TensorFlow,ai,Machine learning and deep learning experiments.,#ff6f00,https://logowik.com/content/uploads/images/tensorflow4903.jpg
+Frameworks & Libraries,MediaPipe,ai,"Real-time face, hand and pose tracking pipelines.",#0097a7,https://mohamedalirashad.github.io/FreeFaceMoCap/assets/img/mediapipe.png
+Frameworks & Libraries,NumPy,scripting,Fast numerical arrays and math operations in Python.,#013243,https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/960px-NumPy_logo_2020.svg.png
+Frameworks & Libraries,Pandas,scripting,"Data cleaning, analysis and tabular data handling.",#150458,https://logowik.com/content/uploads/images/pandas8580.logowik.com.webp
+Frameworks & Libraries,Selenium,automation,Browser automation — bulk WhatsApp tool.,#43b02a,"<svg viewBox=""0 0 24 24"" fill=""white"" width=""38"" height=""38""><circle cx=""12"" cy=""12"" r=""9"" stroke=""white"" stroke-width=""2"" fill=""none""/><path d=""M8 8l8 8M16 8l-8 8"" stroke=""white"" stroke-width=""2""/></svg>"
+Frameworks & Libraries,Bootstrap,frontend,Quick responsive scaffolding when needed.,#7952b3,https://toppng.com/uploads/preview/bootstrap-featured-image-bootstrap-3-logo-11563293130teouf93qpu.png
+Frameworks & Libraries,TCPDF,backend,"PHP library for generating PDFs — receipts, reports, documents.",#c0392b,https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/512px-PDF_file_icon.svg.png
+Security & APIs,Shiprocket / Fastrr,api,Headless checkout — HMAC-SHA256 token flow.,#2e7d32,https://cdn.brandfetch.io/idW3zCkzQE/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1743159158189
+Security & APIs,REST APIs,api,"JSON endpoints, dedicated PHP handlers.",#ff6f00,https://miro.medium.com/v2/resize:fit:440/1*J3G3akaMpUOLegw0p0qthA.png
+Security & APIs,AES Encryption,security,AES-256-CBC/GCM with PBKDF2-SHA256 key derivation for encrypted systems.,#37474f,https://img.icons8.com/color/512/lock--v1.png
+Security & APIs,HMAC-SHA256,security,Signed tokens and request verification for API integrations.,#455a64,https://img.icons8.com/color/512/key--v1.png
+Security & APIs,Prepared Statements,security,Safe MySQLi queries with bind_param to prevent SQL injection.,#00897b,https://img.icons8.com/color/512/shield--v1.png
+Tools & Platforms,VS Code,coding,Primary IDE for all PHP/JS work.,#0078d4,https://ipfyx.fr/images/vscodefull.png
+Tools & Platforms,Git / GitHub,coding,Version control for every project.,#181717,https://static.vecteezy.com/system/resources/previews/027/076/058/non_2x/github-logo-transparent-free-png.png
+Tools & Platforms,Hostinger,hosting,"Shared hosting — cPanel, SMTP, deployments.",#673de6,https://cdn.freelogovectors.net/wp-content/uploads/2023/11/hostingerlogo-freelogovectors.net_.png
+Tools & Platforms,cPanel,hosting,"File manager, databases, cron jobs and email setup on shared hosting.",#ff6c2c,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/CPanel_logo.svg/512px-CPanel_logo.svg.png
+Tools & Platforms,Postman,coding,API testing for integrations like Shiprocket.,#ff6c37,https://vectorseek.com/wp-content/uploads/2023/05/Postman-Logo-Vector-768x768.jpg
+Tools & Platforms,Claude,ai,"Study aid, code review and build partner.",#d97757,https://static.vecteezy.com/system/resources/previews/067/941/712/large_2x/claude-ai-logo-rounded-hd-free-png.png
+Tools & Platforms,Google Colab,cloud,Free hosted notebooks with GPU for ML experiments.,#f9ab00,https://images.seeklogo.com/logo-png/61/1/google-colab-logo-png_seeklogo-611585.png
+Tools & Platforms,AWS,cloud,"Cloud services for hosting, storage and deployment.",#ff9900,https://freepnglogo.com/images/all_img/amazon-web-services-logo-d111.png
+Tools & Platforms,Docker,automation,Containerised environments for consistent dev and deploys.,#2496ed,https://logos-world.net/wp-content/uploads/2021/02/Docker-Emblem.png
+Tools & Platforms,n8n,automation,Workflow automation for marketing and internal operations.,#ea4b71,https://repository-images.githubusercontent.com/193215554/df34b36d-279c-496c-91c2-959dd9c9f13d
+Tools & Platforms,Ollama,ai,Local LLM workflows for internal utilities and automation.,#1a1a1a,https://images.seeklogo.com/logo-png/59/1/ollama-logo-png_seeklogo-593420.png
+Tools & Platforms,OpenClaw,automation,Open-source AI agent for automating tasks.,#e5484d,https://images.seeklogo.com/logo-png/66/1/openclaw-icon-logo-png_seeklogo-669113.png
+Tools & Platforms,Hugging Face,ai,"Pretrained models, datasets and ML community hub.",#ffcc4d,https://seeklogo.com/images/H/hugging-face-logo-B2C4933ED5-seeklogo.com.png
+Apps and Games,Figma,design,My primary design tool for UI illustrations and planning.,#1e1b2e,https://www.pngall.com/wp-content/uploads/13/Figma-Logo-PNG-Cutout.png
+Apps and Games,Notion,notes,"All-in-one workspace for notes, docs and databases.",#191919,https://logos-world.net/wp-content/uploads/2024/08/Notion-Logo.png
+Apps and Games,Discord,communication,"Voice, video and text — the hub for my communities.",#5865f2,https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png
+Apps and Games,DaVinci Resolve,creative,Professional video editing and color grading suite.,#1a1a1a,https://static.vecteezy.com/system/resources/previews/067/941/730/large_2x/davinci-resolve-logo-davinci-resolve-icon-transparent-background-free-png.png
+Apps and Games,Node.js,coding,JavaScript runtime for running JS outside the browser.,#3c873a,https://seeklogo.com/images/N/nodejs-logo-52F5C0204E-seeklogo.com.png
+Security & APIs,Session-based Auth,security,Secure admin login with PHP sessions and role-based access checks.,#5c6bc0,https://img.icons8.com/color/512/user-shield.png
+Security & APIs,Audit Logging,security,Activity trails for every important action across CRM and admin panels.,#6d4c41,https://img.icons8.com/color/512/activity-history.png
+Security & APIs,Schema.org JSON-LD,seo,Structured data generation for rich search results on product pages.,#1a73e8,https://img.icons8.com/color/512/search--v1.png
+Security & APIs,SMTP Email,api,Transactional and CRM emails sent through cPanel SMTP.,#d32f2f,https://img.icons8.com/color/512/new-post.png
+Tools & Platforms,phpMyAdmin,database,"Managing MySQL databases, schema changes and quick data fixes.",#f29111,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PhpMyAdmin_logo.png/512px-PhpMyAdmin_logo.png
+Tools & Platforms,Apache / .htaccess,hosting,"Clean URLs, redirects and rewrite rules on shared hosting.",#d22128,https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Apache_HTTP_server_logo_%282016%29.svg/512px-Apache_HTTP_server_logo_%282016%29.svg.png

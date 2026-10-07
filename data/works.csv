@@ -1,0 +1,21 @@
+title,desc,badge,logo_url,link,tech,year,status
+Gogirley, e-commerce platform built with dynamic product etc,V1,,,PHP,2026,Live
+Rh2 Media,Media and digital platform with secure API-based integrations.,V1,https://rh2media.com/logo/logo.png,https://rh2media.com,PHP|MySQL|REST API|HMAC|JSON,2026,Live
+Prism Tech Lab,"Technology and digital-marketing platform focused on web development, automation, QR-based products, integrations, hosting and digital services.",P1,https://prismtechlab.com/media/logo/logo.png,https://prismtechlab.com,PHP|JavaScript|APIs|Cloudflare,2026,Live
+Unibuzzora,"Mobile-first e-commerce platform combining owned products, promoted products, external product discovery and a referral-based rewards ecosystem.",V1,https://unibuzzora.com/media/logo/logo.webp,https://unibuzzora.com/,PHP|MySQL|JavaScript|PWA,2026,Live
+Gauranga Consultancy,"Responsive consultancy platform featuring university listings, admission assistance and lead-generation focused UX.",V2,https://gaurangaconsultancy.com/media/logo/logo.png,https://gaurangaconsultancy.com/,PHP|MySQL|JavaScript,2026,Live
+Chita State Medical Academy,"Official partner website for a Russian university, built with a full CMS for university listings and student resources.",V3,https://chitastatemedicalacademy.in/media/logo/logo.png,https://chitastatemedicalacademy.in/,PHP|MySQL|Laravel,2026,Live
+Amur State Medical Academy,Partner website for a Russian medical university with a full admission system and student portal.,V2,https://amurstatemedicalacademy.com/media/logo/logo.png,https://amurstatemedicalacademy.com/,PHP|MySQL|Bootstrap,2026,Live
+Meeran India,Shopify-based e-commerce store with customised storefront and product setup.,V2,,https://meeranindia.com/,Shopify,2025,Live
+AI Call Analysis Pipeline,"Local AI workflow that processes CRM call recordings through transcription, analysis and structured insight generation using speech recognition and local language models.",AI1,,#,Python|Whisper|FFmpeg|n8n|Ollama,2026,Research
+Local AI Automation Engine,Privacy-oriented automation environment using n8n and locally hosted Ollama models to process business data and generate structured AI insights.,AI2,,#,n8n|Ollama|Python|AI Agents,2026,Private
+CRM Lead API,"Secure lead-ingestion API supporting HMAC authentication, duplicate detection, JSON processing, validation and CRM synchronization.",API1,,#,PHP|MySQL|REST API|HMAC|JSON,2026,Private
+University Recommendation Engine,"Data-driven university discovery and recommendation system using country, course, budget, ranking and student-support attributes to assist education counseling workflows.",EDU1,,#,PHP|MySQL|JavaScript|AJAX,2026,Private
+Gauranga CRM,"Full CRM for a study-abroad consultancy with lead management, admin panels, scheduling, activity logging and PDF generation.",CRM1,,#,PHP|MySQL|JavaScript|FullCalendar|TCPDF,2026,Private
+Shiprocket / Fastrr Checkout Integration,Headless checkout integration with HMAC-SHA256 token flow for order and shipping automation.,API2,,#,PHP|REST API|HMAC|Shiprocket,2026,Private
+Encrypted Credential Vault,Secure credential storage using AES-256 encryption and PBKDF2-SHA256 key derivation.,SEC1,,#,PHP|MySQL|AES-256|PBKDF2,2026,Private
+shri durga jyotirmay foundation,foundation,V1,https://shridurgajyotirmayfoundation.com/assets/images/logo/logo.png,https://shridurgajyotirmayfoundation.com/,,,
+Scanalyze,AI-assisted web security research platform combining OWASP ZAP vulnerability scanning with intelligent analysis and structured security reporting.,R1,,#,Python|AI/ML|OWASP ZAP|Cybersecurity,2025,Research
+Anitrade B2B Multi-Vendor Platform,"B2B multi-vendor e-commerce platform built with dynamic product, vendor, database and business-management functionality.",V1,,#,PHP|MySQL|JavaScript|AJAX,2024,Archived
+Environmental Data Analysis,"Research project focused on structured analysis of environmental, natural-resource and dam-related datasets for extracting analytical insights.",R2,,#,Python|Data Analysis|Research,2024,Research
+WhatsApp Automation Tool,Bulk WhatsApp messaging automation using Python and Selenium with scheduling support.,V1,,#,Python|Selenium,2024,Archived

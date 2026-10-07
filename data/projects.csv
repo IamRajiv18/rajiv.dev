@@ -1,0 +1,10 @@
+title,desc,badge,logo_url,link,icon_type,emoji,
+AI Call Analysis Pipeline,"Local AI workflow that processes CRM call recordings through transcription, analysis and structured insight generation using speech recognition and local language models.",AI1,,#,Python|Whisper|FFmpeg|n8n|Ollama,2026,Research
+Local AI Automation Engine,Privacy-oriented automation environment using n8n and locally hosted Ollama models to process business data and generate structured AI insights.,AI2,,#,n8n|Ollama|Python|AI Agents,2026,Private
+CRM Lead API,"Secure lead-ingestion API supporting HMAC authentication, duplicate detection, JSON processing, validation and CRM synchronization.",API1,,#,PHP|MySQL|REST API|HMAC|JSON,2026,Private
+University Recommendation Engine,"Data-driven university discovery and recommendation system using country, course, budget, ranking and student-support attributes to assist education counseling workflows.",EDU1,,#,PHP|MySQL|JavaScript|AJAX,2026,Private
+Shiprocket / Fastrr Checkout Integration,Headless checkout integration with HMAC-SHA256 token flow for order and shipping automation.,API2,,#,PHP|REST API|HMAC|Shiprocket,2026,Private
+Encrypted Credential Vault,Secure credential storage using AES-256 encryption and PBKDF2-SHA256 key derivation.,SEC1,,#,PHP|MySQL|AES-256|PBKDF2,2026,Private
+Scanalyze,AI-assisted web security research platform combining OWASP ZAP vulnerability scanning with intelligent analysis and structured security reporting.,R1,,#,Python|AI/ML|OWASP ZAP|Cybersecurity,2025,Research
+Environmental Data Analysis,"Research project focused on structured analysis of environmental, natural-resource and dam-related datasets for extracting analytical insights.",R2,,#,Python|Data Analysis|Research,2024,Research
+WhatsApp Automation Tool,Bulk WhatsApp messaging automation using Python and Selenium with scheduling support.,V1,,#,Python|Selenium,2024,Archived
